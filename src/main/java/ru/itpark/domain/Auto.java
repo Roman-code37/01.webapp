@@ -13,6 +13,4 @@ public class Auto {
     private String description;
     private String image;
 
-    public Auto(String id, String name, String description, String image) {
-    }
 }

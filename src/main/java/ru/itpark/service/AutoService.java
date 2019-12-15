@@ -22,7 +22,7 @@ public class AutoService {
     public List<Auto> getAll() throws SQLException {
         try (var conn = ds.getConnection()){
             try (var stmt = conn.createStatement()){
-                try (var rs = stmt.executeQuery("SELECT id, name, description, image FROM autos;")){
+                try (var rs = stmt.executeQuery("SELECT id, name, description, image FROM autos")){
                     ArrayList<Auto> list;
                     list = new ArrayList<Auto>();
                     while (rs.next()){
